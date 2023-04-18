@@ -19,10 +19,10 @@ public class Atelier3Application {
     @Bean
     CommandLineRunner commandLineRunner(PatientRepository patientRepository){
         return args -> {
-            patientRepository.save(new Patient(null,"rana",new Date(), false,12));
-            patientRepository.save(new Patient(null,"mohammed",new Date(), true,20));
-            patientRepository.save(new Patient(null,"ilham",new Date(), false,13));
-            patientRepository.save(new Patient(null,"salma",new Date(), true,5));
+            patientRepository.save(new Patient(null,"Oumaima",new Date(), false,12));
+            patientRepository.save(new Patient(null,"Siham",new Date(), true,20));
+            patientRepository.save(new Patient(null,"Rania",new Date(), false,13));
+            patientRepository.save(new Patient(null,"Maha",new Date(), true,5));
 
             patientRepository.findAll().forEach(p->{
                 System.out.println(p.getNom());
